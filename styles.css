@@ -11,12 +11,16 @@
 }
 
 #grid{
+    margin: 5vw; 
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center;
-    width: 80vw;
+    justify-content: end;
+    width: 30vw;
+    border-style: solid; 
+    border-color: black;
 }
 
 .pixel{
-    background-color: black;
+    background-color: red;
+    border: none;
 }
