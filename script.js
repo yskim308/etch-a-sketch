@@ -10,6 +10,10 @@ function generateGrid(pixelCount){
             square.className = "pixel";
             square.style.width = pixelSize + "px";
             square.style.height = pixelSize + "px";
+            square.addEventListener('mouseover', () => {
+                square.classList.remove('pixel'); 
+                square.classList.add('pixel_mouseDown');     
+            });
             grid.appendChild(square);   
         }
     }

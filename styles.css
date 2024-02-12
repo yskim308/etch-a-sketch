@@ -21,6 +21,10 @@
 }
 
 .pixel{
-    background-color: red;
+    background-color: white;
     border: none;
+}
+
+.pixel_mouseDown{
+    background-color: black; ;
 }
