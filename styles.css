@@ -5,13 +5,26 @@
     font-size: 36px; 
 }
 
+.settings-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 2vh; 
+}
+
+.settings{
+    display: flex; 
+    flex-direction: column;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     display: flex; 
     justify-content: center;
 }
 
 #grid{
-    margin: 5vw; 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: end;

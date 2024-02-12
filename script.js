@@ -19,4 +19,23 @@ function generateGrid(pixelCount){
     }
 }
 
-generateGrid(32); 
+function removeGrid(){
+    const grid = document.querySelectorAll(".pixel, .pixel_mouseDown");
+    grid.forEach((element) => {
+        element.remove(); 
+    })
+}
+
+generateGrid(50); 
+
+let value = document.querySelector("#value"); 
+let input = document.querySelector("#gridInput"); 
+input.addEventListener("input", () => {
+    value.textContent = "Grid Pixel Count: " + input.value;
+})
+input.addEventListener("mouseup", () => {
+    removeGrid(); 
+    generateGrid(input.value)
+})
+
+
